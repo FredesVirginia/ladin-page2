@@ -53,7 +53,7 @@ export default function Home() {
     <div>
       <nav className="bg-color1 flex flex-col justify-center items-center h-[400px]">
         <Image
-          src="/img/segunda.png"
+          src="/img/segunda.jpg"
           width={300}
           height={200}
           alt="ho"
