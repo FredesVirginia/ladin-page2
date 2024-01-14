@@ -15,6 +15,7 @@ export default function Gracias (){
           height={200}
           alt="ho"
         />
+        <p>Te rediccionaremos a la pagina de descarga</p>
         
         </div>
         <footer className="bg-slate-400   fixed bottom-0 font-bold w-full p-4 text-xl  mt-10 text-center text-gray-800"> Atentamente Jonh Klein</footer>

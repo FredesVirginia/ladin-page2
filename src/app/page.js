@@ -45,9 +45,22 @@ export default function Home() {
       console.error('Error en onSubmit de register', error);
     }
   
-  
+   
+
+
   
    }
+
+
+    const descargaEbook = () => {
+      const url = '/file/FredesVirginaCv.pdf'; // Ruta al archivo en la carpeta 'public'
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'mi-ebook.pdf'; // Nombre que tendrá el archivo al ser descargado
+      link.click();
+      router.push("/gracias");
+  
+    };
   
   return (
     <div>
@@ -65,7 +78,7 @@ export default function Home() {
 
         <div className="flex flex-col items-center justify-center py-8">
           <p className="font-bold text-xl">Descarga el Ebook 🧧 </p>
-          <button onClick={click} className=" mt-4 p-2 px-6 font-extrabold bg-color3 ">
+          <button onClick={descargaEbook} className=" mt-4 p-2 px-6 font-extrabold bg-color3 ">
             Aqui
           </button>
 
